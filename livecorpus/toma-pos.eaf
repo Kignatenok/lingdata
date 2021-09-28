@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ANNOTATION_DOCUMENT AUTHOR="" DATE="2021-09-27T19:21:17+03:00"
+<ANNOTATION_DOCUMENT AUTHOR="" DATE="2021-09-28T19:38:22+03:00"
     FORMAT="3.0" VERSION="3.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.mpi.nl/tools/elan/EAFv3.0.xsd">
     <HEADER MEDIA_FILE="" TIME_UNITS="milliseconds">
@@ -7,7 +7,7 @@
             MEDIA_URL="file:///C:/Users/USER/Desktop/toma.mp4"
             MIME_TYPE="video/mp4" RELATIVE_MEDIA_URL="../../USER/Desktop/toma.mp4"/>
         <PROPERTY NAME="URN">urn:nl-mpi-tools-elan-eaf:33b6bbc4-be4e-4431-af97-9284779a3969</PROPERTY>
-        <PROPERTY NAME="lastUsedAnnotationId">1020</PROPERTY>
+        <PROPERTY NAME="lastUsedAnnotationId">1029</PROPERTY>
     </HEADER>
     <TIME_ORDER>
         <TIME_SLOT TIME_SLOT_ID="ts1" TIME_VALUE="520"/>
@@ -4906,6 +4906,73 @@
             </REF_ANNOTATION>
         </ANNOTATION>
     </TIER>
+    <TIER ANNOTATOR="@kignatenok" DEFAULT_LOCALE="ru"
+        LINGUISTIC_TYPE_REF="gestures" PARTICIPANT="@tra2002f" TIER_ID="gesture@tra2002f"/>
+    <TIER ANNOTATOR="@kignatenok" DEFAULT_LOCALE="ru"
+        LINGUISTIC_TYPE_REF="gestures" PARTICIPANT="@eni2002f" TIER_ID="gesture@eni2002f"/>
+    <TIER ANNOTATOR="@kignatenok" LINGUISTIC_TYPE_REF="pause"
+        PARTICIPANT="@tra2002f" TIER_ID="pause@tra2002f"/>
+    <TIER ANNOTATOR="@kignatenok" LINGUISTIC_TYPE_REF="pause"
+        PARTICIPANT="@eni2002f" TIER_ID="pause@eni2002f"/>
+    <TIER ANNOTATOR="@kignatenok" LINGUISTIC_TYPE_REF="focus"
+        PARTICIPANT="@eni2002f" TIER_ID="focus@eni2002f"/>
+    <TIER ANNOTATOR="@kignatenok" LINGUISTIC_TYPE_REF="focus"
+        PARTICIPANT="@tra2002f" TIER_ID="focus@tra2002f"/>
+    <TIER ANNOTATOR="@kignatenok" LINGUISTIC_TYPE_REF="gesture_meaning"
+        PARENT_REF="gesture@tra2002f" PARTICIPANT="@tra2002f" TIER_ID="gestMeaning@tra2002f"/>
+    <TIER ANNOTATOR="@kignatenok" LINGUISTIC_TYPE_REF="gesture_meaning"
+        PARENT_REF="gesture@eni2002f" PARTICIPANT="@eni2002f" TIER_ID="gestMeaning@eni2002f"/>
+    <TIER ANNOTATOR="@kignatenok" LINGUISTIC_TYPE_REF="intonation"
+        PARENT_REF="text@tra2002f" PARTICIPANT="@tra2002f" TIER_ID="intonation@tra2002f">
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a1021" ANNOTATION_REF="a1">
+                <ANNOTATION_VALUE>нарратив</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a1022" ANNOTATION_REF="a2">
+                <ANNOTATION_VALUE>нарратив</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a1023" ANNOTATION_REF="a3">
+                <ANNOTATION_VALUE>нарратив</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a1024" ANNOTATION_REF="a76">
+                <ANNOTATION_VALUE>обрыв</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a1025" ANNOTATION_REF="a77">
+                <ANNOTATION_VALUE>нарратив</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a1026" ANNOTATION_REF="a78">
+                <ANNOTATION_VALUE>нарратив</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+    </TIER>
+    <TIER ANNOTATOR="@kignatenok" LINGUISTIC_TYPE_REF="intonation"
+        PARENT_REF="text@eni2002f" PARTICIPANT="@eni2002f" TIER_ID="intonation@eni2002f">
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a1027" ANNOTATION_REF="a4">
+                <ANNOTATION_VALUE>нарратив</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a1028" ANNOTATION_REF="a79">
+                <ANNOTATION_VALUE>вопрос да-нет</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a1029" ANNOTATION_REF="a86">
+                <ANNOTATION_VALUE>нарратив</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+    </TIER>
     <LINGUISTIC_TYPE GRAPHIC_REFERENCES="false"
         LINGUISTIC_TYPE_ID="default-lt" TIME_ALIGNABLE="true"/>
     <LINGUISTIC_TYPE GRAPHIC_REFERENCES="false"
@@ -4929,6 +4996,12 @@
         GRAPHIC_REFERENCES="false" LINGUISTIC_TYPE_ID="translation" TIME_ALIGNABLE="false"/>
     <LINGUISTIC_TYPE CONSTRAINTS="Symbolic_Subdivision"
         GRAPHIC_REFERENCES="false" LINGUISTIC_TYPE_ID="sub " TIME_ALIGNABLE="false"/>
+    <LINGUISTIC_TYPE CONSTRAINTS="Symbolic_Association"
+        GRAPHIC_REFERENCES="false" LINGUISTIC_TYPE_ID="intonation" TIME_ALIGNABLE="false"/>
+    <LINGUISTIC_TYPE GRAPHIC_REFERENCES="false"
+        LINGUISTIC_TYPE_ID="pause" TIME_ALIGNABLE="true"/>
+    <LINGUISTIC_TYPE GRAPHIC_REFERENCES="false"
+        LINGUISTIC_TYPE_ID="focus" TIME_ALIGNABLE="true"/>
     <LOCALE COUNTRY_CODE="US" LANGUAGE_CODE="en" VARIANT="ASCII"/>
     <LOCALE COUNTRY_CODE="RU" LANGUAGE_CODE="ru"/>
     <LANGUAGE LANG_DEF="http://cdb.iso.org/lg/CDB-00130975-001"
